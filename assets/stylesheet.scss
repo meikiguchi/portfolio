@@ -1,0 +1,92 @@
+@charset "UTF-8";
+
+.open{
+    width: 10%;
+    border-radius: 5px;
+    background-color: rgb(255, 234, 0);
+    border: 2px solid;
+    cursor: pointer;
+    text-align: center;
+}
+.imgBox,.imgBox2,.imgBox3{
+    width: 30%;
+    cursor: pointer;
+}
+
+#sortable{
+    cursor: pointer;
+}
+.drag{
+    width: 10%;
+    cursor: pointer;
+}
+
+#drop{
+    display: flex;
+    .drop1,.drop2,.drop3{
+        width: 30%;
+    }
+}
+
+#overflow{
+    width: 100%;
+    height: 5%;
+    background-color: plum;
+    position: absolute; /* 相対位置に指定 */
+    text-align: center;
+}
+
+#overflow2{
+    width: 100%;
+    height: 5%;
+    background-color: rgb(236, 47, 14);
+    color: white;
+    position: absolute;
+    text-align: center;
+}
+
+.slider{
+    img{
+        width: 100%;
+    }
+}
+
+.swiper--wrapper {
+    /* wrapperのサイズを調整 */
+    width: 100%;
+  }
+  
+  .swiper-slide {
+    img{
+    width: 100%;
+    height: 100%;
+    }
+  }
+  
+  .visible {
+    opacity: 0;
+    transition: transform 0.5s linear;
+    animation-duration: 2.5s;
+    animation-fill-mode: both;
+  }
+  /*brightness*/
+  .effect {
+    animation-name: imgbrightness;
+    opacity: 1;
+    transition: .8s;
+  }
+  @keyframes imgbrightness {
+    0% {
+      opacity: 0;
+      filter: brightness(300%);
+      /*明度300%*/
+    }
+    100% {
+      opacity: 1;
+      filter: brightness(100%);
+      /*100%が基準値*/
+    }
+  }
+
+
+  
