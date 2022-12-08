@@ -1,0 +1,338 @@
+@charset "UTF-8";
+
+html{
+    width: 100%;
+    font-family:"Times New Roman", "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
+    margin: 0 auto;
+    max-width: 1200px;
+    
+}
+
+img{
+    width: 100%;
+    max-width: 1200px;
+}
+body{
+    width: 100%;
+}
+
+/*--------------------------------------------------------------------------------------
+  header
+  --------------------------------------------------------------------------------------*/
+
+header{
+    max-width: 1200px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;/* 並べた要素を左右の端に寄せる*/
+    position: fixed; /* 領域を固定*/
+    padding: 15px 0 10px 20px;    
+}
+
+
+header article{
+  display: flex;
+  gap:calc(100vw * 20 / 394);/* 画面のサイズが720pxになった時に40px開く*/
+}
+
+header nav{
+  display: flex;
+}
+
+header ul{
+  display: flex;
+  gap:calc(100vw * 5 / 394);
+}
+
+h1 img{
+  width: 60px;
+}
+
+#left-menu{
+  font-size:calc(100vw * 5 / 394);/* 画面のサイズが720pxになった時に10pxになる*/
+}
+
+#left-menu li{
+  margin:5px 0 0 10px;
+}
+
+#right-menu li{
+  margin: 0 8px 0 0;
+}
+
+#right-menu img{
+  width: 20px;
+}
+
+
+
+/*--------------------------------------------------------------------------------------
+  top-news concept
+  --------------------------------------------------------------------------------------*/
+
+main{
+  padding: 50px 0;
+  background-color: #e9e6e5;
+}
+
+#main-img{
+  text-align: center;
+  display: flex;
+}
+
+#left-img{
+  width: 50%;
+  margin: auto;
+}
+
+#right-img{
+  
+  width: 50%;
+  margin: auto;
+}
+
+/* 横に並んだ要素が767px以下の画面になった時に縦に並ぶ */
+@media screen and (max-width: 720px){
+  #main-img{
+    display: block;
+  }
+  #left-img{
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  #right-img{
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+
+#top-news{
+  background-color: black;
+  color: white;
+  font: bold 11px normal;
+  padding: 10px 0;
+  text-align: center;
+}
+
+#catch-copy{
+  text-align: center;
+  margin: 100px auto;
+  }
+
+#catch-copy img{
+   width: 140px;
+   margin: 30px auto;
+}
+
+#catch-copy h2{
+   font-size: 35px;
+   margin: 20px auto;
+}
+
+
+
+#catch-copy-en{
+   font-size:calc(100vw * 10 / 394);
+   white-space: nowrap;
+}
+
+#catch-copy-jp{
+   font-size: 12px;
+   letter-spacing: 3px;
+   line-height: 25px;
+   padding: 30px 0;
+}
+
+#catch-copy a{
+   font-size: 12px;
+   border-bottom: 1px solid;
+   padding: 10px;/* borderの内側の余白を開ける*/
+}
+
+#concept{
+   text-align: center;
+}
+
+#concept p{
+   font: lighter normal 100px serif;/* style,weight,size,line-height,family*/
+   padding: 100px 0 40px;
+}
+
+/*--------------------------------------------------------------------------------------
+  main 1 2 3
+  --------------------------------------------------------------------------------------*/
+
+  #main-123 h3{
+    width: 100%;
+    font-size: 60px;
+    margin: 50px 0 0;
+    padding: 30px 0;
+  }
+
+  #main-123 h4{
+    font-size: 22px;
+    margin: 0 30px;
+  }
+
+  #main-123 p{
+    width: 96px;
+    border-bottom: 1px solid;
+    font-size: 14px;
+    margin: 40px 30px;
+    padding: 10px 5px ;/* borderの内側の余白を開ける*/
+  }
+
+  #main-123 img{
+    width: 100%;
+  }
+
+  #main1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;/* 並べた要素を左右の端に寄せる*/
+    padding: 50px 0;
+  }
+
+  
+  #main2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;/* 並べた要素を左右の端に寄せる*/
+    padding: 50px 0;
+  }
+
+  #main3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;/* 並べた要素を左右の端に寄せる*/
+    padding: 50px 0;
+  }    
+
+
+/*--------------------------------------------------------------------------------------
+  products
+  --------------------------------------------------------------------------------------*/
+  
+  #products h5{
+    font-size: 50px;
+    text-align: center;
+    padding: 50px;
+  }
+
+  #products article{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  
+  #products img{
+    width: 250px;
+    margin: 10px 0;
+  }
+
+  #products h6{
+    font-size: 15px;
+  }
+
+  #products p{
+    font-size: 12px;
+    margin: 10px 0 15px;
+  }
+
+  #products h7{
+    font-size: 18px;
+  }
+
+  #products span{
+    font: bold 12px normal;
+  }
+
+  .view-more2{
+    width: 120px;
+    border-bottom: 1px solid;
+    display: flex;
+    font-size: 17px;
+    margin: 40px 30px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 5px ;/* borderの内側の余白を開ける*/
+  }
+
+
+/*--------------------------------------------------------------------------------------
+  news
+  --------------------------------------------------------------------------------------*/
+
+  #news{
+    margin: 0 0 150px;
+  }
+  #news h5{
+    font-size: 50px;
+    text-align: center;
+    padding: 150px 0 50px;
+  }
+
+  #news nav{
+    width: 66%;
+    border-top: 1px solid rgb(208, 208, 208);
+    font-size: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #news ul{
+    border-bottom: 1px solid rgb(208, 208, 208);
+    padding: 20px ;
+  }
+
+  #news li{
+    padding: 5px ;
+  }
+
+
+/*--------------------------------------------------------------------------------------
+  footer
+  --------------------------------------------------------------------------------------*/
+
+  footer{
+    width: 100%;
+    display: flex;
+    font-size:calc(100vw * 5 / 394);
+    font-family:"游ゴシック Medium",YuGothic,YuGothicM,"Hiragino Kaku Gothic ProN","Hiragino Kaku Gothic Pro",メイリオ,Meiryo,sans-serif;
+    font-weight: bold;
+    justify-content: space-between;/* 並べた要素を左右の端に寄せる*/
+    margin: 50px 0 0 20px;
+  }
+
+  footer article{
+    display: flex;
+    gap:calc(100vw * 10 / 394);
+  }
+
+  footer li{
+    margin: 17px 0;
+  }
+
+  footer img{
+    width: 100%;
+  }
+
+  #icon ul{
+    display: flex;
+    margin: 0 30px 0 0 ;
+  }
+
+  #icon li{
+    margin: 15px 0 30px 20px;
+  }
+
+  #icon p{
+   
+    text-align: right;
+    margin: 0 40px 0 0 ;
+  }
