@@ -1,0 +1,390 @@
+@charset "UTF-8";
+
+html{
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1200px;
+    
+}
+
+img{
+    width: 100%;
+    max-width: 1200px;
+}
+body{
+    width: 100%;
+    background-color: rgb(236, 236, 236);
+}
+
+/*--------------------------------------------------------------------------------------
+  header
+  --------------------------------------------------------------------------------------*/
+
+  header{
+    width: 100%;
+    max-width: 1200px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;/* 並べた要素を左右の端に寄せる*/
+    margin: 10px 0 ;
+    position: fixed; /* 領域を固定*/
+    z-index: 1;/* エリアの重なる順番を一番上にする*/
+}
+
+header h1{
+    width: 120px;
+    padding: 10px 5px;
+}
+
+header ul{
+    width: calc(100% - 0px);
+    display: flex;
+}
+
+header li{
+    font-size:13px;
+    margin: 10px 0 0 30px;
+    padding: 10px 0;
+}
+
+header span{
+    background-color: rgb(227, 146, 15);
+    border-radius: 0 10px 10px 0;
+    color: white;
+    font-size:13px;
+    padding: 17px 15px 18px;
+}
+
+@media screen and (max-width: 635px){
+    
+    header li{
+        font-size: 10px;
+        margin: 8px 0 0 10px;
+    }
+
+    header span{
+        font-size: 1px;
+        padding: 16px 5px 11px 5px ;
+    }
+
+    header h1{
+        width: 80px;
+    }
+}
+
+
+
+
+/*--------------------------------------------------------------------------------------
+  service
+  --------------------------------------------------------------------------------------*/
+ 
+  #service{
+    background: url(./img/mv_background\ \(1\).jpeg) no-repeat;/* file,repeat*/
+    background-size: 120%;
+  }
+
+  #service h2{
+    font-size: 4vw;
+    line-height: 7vw;
+    color: white;
+    font-weight: bold;
+    padding: 45% 0 0 5%;
+  }
+
+  .title{
+    margin: 10% 0 0 5% ;
+  }
+
+  .title h3{
+    font-size: 5vw;
+    font-weight:bold;
+  }
+
+  .title p{
+    font-size: 3vw;
+    font-weight: bold;
+    padding: 2% 0;
+  }
+
+
+  #about-shopify{
+    max-width: 550px;
+    margin: 0 auto 0 0;
+    width: calc(100vw * 390 / 394);
+  }
+
+  #about-shopify h4{
+    font: bold normal 23px normal;
+  }
+
+  #about-shopify div{
+    margin: 0 0 0 20px;
+  }
+  #about-shopify p{
+    line-height: 35px;
+  }
+
+  #about-shopify div{
+    width: 320px;
+    background-color: black;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    padding: 10px 10px 10px 110px;
+  }
+
+  #about-shopify div span{
+    padding: 0 0 0 60px;
+  }
+
+
+/*--------------------------------------------------------------------------------------
+  blog
+--------------------------------------------------------------------------------------*/
+
+.title div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.arrow-green{
+    width: 4vw;
+    margin: 0 0 0 20px;
+}
+
+.green{
+    color: rgb(148, 202, 67);
+}
+
+#blog{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+    margin: 20px 0 0 0;
+}
+
+#blog img{
+    border-radius: 10px 10px 0 0 ;
+}
+
+#blog aside{
+    max-width: 350px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px 10px rgba(208, 208, 208, 0.65);/* 影を付ける・水平方向、垂直方向、距離、広がり*/
+}
+
+#blog aside div{
+    line-height: 30px;
+    margin: 30px 20px;
+}
+
+.date{
+    font-size: 14px;
+}
+
+.hashtag{
+    font-size: 11px;
+    color: rgb(71, 118, 103);
+    margin: 10px 0 0 0;
+}
+
+
+/*--------------------------------------------------------------------------------------
+  news
+--------------------------------------------------------------------------------------*/
+
+#news li{
+    align-items: center;/* 上下中央に寄せる*/
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 15px;
+    margin: 20px 0;
+    padding: 20px 30px;
+}
+
+
+.inform{
+    width: 100px;
+    border: 1px solid ;
+    border-radius: 3px;
+    font-size: 11px;
+    margin: 0 30px 0 20px;
+    padding: 5px 0 ;
+    text-align: center;
+}
+
+#news nav p{
+    width: 100px;
+}
+
+.arrow{
+    color: rgb(148, 202, 67);
+    border: 1px solid;
+    border-radius: 100%;
+    margin: 0 0 0 40px;
+    padding: 7px 8px;
+}
+
+@media screen and (max-width: 635px){
+    .arrow{
+        display: none;
+    }
+}
+
+.detail{
+    width: 700px;
+    line-height: 30px;
+}
+
+
+/*--------------------------------------------------------------------------------------
+  contact
+--------------------------------------------------------------------------------------*/
+
+
+#contact div{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+#overlap{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#overlap1{
+    width: 590px;
+}
+
+#overlap2{
+    width: 590px;
+}
+
+.p1{
+    top: 30%;
+    left: 28%;
+    color: white;
+    font-size: 26px;
+    font-weight: bold;
+    position: absolute;
+}
+
+.p2{
+    width: 380px;
+    top: 50%;
+    left: 20%;
+    background-color: rgb(221, 156, 51);
+    border-radius: 5px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px 15px 20px 10px;
+    position: absolute;
+    text-align: right;
+}
+
+#overlap span{
+    font-size: 20px;
+    padding: 0 0 0 60px;
+}
+
+.icon{
+    width: 30px;
+}
+
+.back-img-dark{
+    background-color: black;
+}
+.back-img{
+    width: 100%;
+    opacity: 0.3;/* 画像を透明にする，0.1～0.9*/
+}
+
+#overlap{
+    display: flex;
+}
+
+@media screen and (max-width: 588px){
+    .p1{
+        top: 30%;
+        left: 35%;
+        font-size: 15px;
+    }
+    
+    .p2{
+        top: 50%;
+        left: 12%;
+        font-size: 15px;
+        padding: 20px 40px 20px 0px;
+    }
+
+    .icon{
+        width: 20px;
+        }
+    }
+
+
+#back-to-top{
+    font-size: 12px;
+    margin: 30px;
+}
+/*--------------------------------------------------------------------------------------
+  footer
+--------------------------------------------------------------------------------------*/
+
+footer{
+    background-color: white;
+    color: rgb(111, 111, 111);
+    padding: 80px 40px;
+}
+
+footer img{
+    width: 120px;
+    padding: 0 0 20px 0;
+}
+
+footer article{
+    border-bottom: 1px solid rgb(209, 209, 209);
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 11px;
+    margin: 0 0 20px 0;
+    padding: 0 0 70px 0;
+}
+
+footer h4{
+    color: black;
+    font:bold normal 14px normal;
+    padding: 0 0 20px 0;
+}
+
+#left-nav{
+    line-height: 20px;
+    margin:0 30% 0 0 ;
+    font-size: 13px;
+}
+
+.right-nav{
+    line-height: 30px;
+    margin: 0 10px;
+}
+
+footer p{
+    color: black;
+    font-size: 12px;
+}
+
+
+
+
+

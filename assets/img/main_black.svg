@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="119.537" height="37.874" viewBox="0 0 119.537 37.874">
+  <g id="logo" transform="translate(-203.3 -267.752)">
+    <g id="グループ_1" data-name="グループ 1" transform="translate(203.3 267.752)">
+      <path id="パス_1" data-name="パス 1" d="M218.859,288.417l-12-20.665h-.008l-2.266,20.738,14.268-.018Z" transform="translate(-203.511 -267.752)" fill="gray"/>
+      <path id="パス_2" data-name="パス 2" d="M219.306,267.753h-12l12,20.665Z" transform="translate(-203.958 -267.752)" fill="#595959"/>
+      <path id="パス_3" data-name="パス 3" d="M234.707,267.86l-13.036,30.211,22.512-16.932Z" transform="translate(-206.314 -267.77)" fill="#9cbf21"/>
+      <path id="パス_4" data-name="パス 4" d="M234.648,267.773l-12.991-.021v30.3l.01-.008L234.7,267.841Z" transform="translate(-206.312 -267.752)" fill="#198982"/>
+      <path id="パス_5" data-name="パス 5" d="M204.379,292.562,203.3,302.4l15.266-9.851Z" transform="translate(-203.3 -271.819)" fill="#595959"/>
+      <path id="パス_6" data-name="パス 6" d="M210.535,305.12l-.924,6.629.007.008,8.823-6.637Z" transform="translate(-204.336 -273.883)" fill="#595959"/>
+      <path id="パス_7" data-name="パス 7" d="M210.274,298.941l-6.974,4.506v.03l5.284,7.259Z" transform="translate(-203.3 -272.869)" fill="gray"/>
+    </g>
+    <g id="グループ_2" data-name="グループ 2" transform="translate(243.021 285.095)">
+      <path id="パス_8" data-name="パス 8" d="M256.865,288.5h4.007l6,11.055h-3.84l-1.118-2.272h-6.24l-1.149,2.272h-3.7Zm-.231,6.878h4.34l-2.141-4.347Z" transform="translate(-250.817 -288.5)" fill="#222"/>
+      <path id="パス_9" data-name="パス 9" d="M275.344,288.5h3.711l6.727,7.709V288.5h3.3v11.055h-3.54l-6.9-7.843v7.843h-3.3Z" transform="translate(-254.842 -288.5)" fill="#222"/>
+      <path id="パス_10" data-name="パス 10" d="M308.237,288.5h3.678l-5.777,11.055h-3.344L297.063,288.5h3.782l3.678,8.393Z" transform="translate(-258.406 -288.5)" fill="#222"/>
+      <path id="パス_11" data-name="パス 11" d="M323.346,299.559h-3.517V288.5h3.517Z" transform="translate(-262.14 -288.5)" fill="#222"/>
+      <path id="パス_12" data-name="パス 12" d="M343.362,290.464H334.4v2.348h8.232v1.923H334.4v2.842h9.381v1.987H330.937V288.5h12.425Z" transform="translate(-263.963 -288.5)" fill="#222"/>
+    </g>
+  </g>
+</svg>
