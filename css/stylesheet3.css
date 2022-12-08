@@ -1,0 +1,624 @@
+@charset "UTF-8";
+
+html{
+    width: 100%;
+    max-width: 1200px;
+    background: url(../img/background1.png) no-repeat 640px 140px ;/* 背景に画像を入れる・リピートしない・右と上の幅*/ 
+}
+
+
+
+img{
+    max-width: 1200px;
+    width: 340px;
+}
+
+
+/*---------------------------------------------------------------------------------------------------------------------------------
+  body
+  ---------------------------------------------------------------------------------------------------------------------------------*/
+
+  body{
+    padding: 270px 60px;
+    background: url(../img/background2.png) no-repeat 0 900px;
+    background-size: 1370px; /* 背景の画像のサイズ・高さ*/ 
+
+   }
+
+
+/*--------------------------------------------------------------------------------------
+  header
+  --------------------------------------------------------------------------------------*/
+
+  header{
+    width: 1200px;
+    height: 90px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0  8px 9px rgb(236, 236, 236) ;
+    display: flex;
+    font-family: 游ゴシック;
+    font-weight: bold;/* 文字を太くする*/ 
+    z-index: 1;/* エリアの重なる順番を一番上にする*/
+    left: 0;
+    position: fixed; /* 領域を固定*/
+    top: 0;
+  }
+
+  header img{
+    width: 70px;
+    margin: 30px 70px;
+  }
+
+  header ul{
+    margin: 0 0 0 260px;
+  }
+
+  /* マウスホバー前*/
+  header li{
+    display: inline-block; /* リストを横に並べる*/ 
+    font-size: 15px;
+    margin: 20px 0 0 35px;
+  }
+
+  /* マウスホバー後*/
+  header li:hover{
+    color:  rgb(11, 138, 47);
+  }
+
+  /* マウスホバー前*/
+  #button1{
+    border: 2px solid;
+    border-radius: 25px;
+    color: rgb(15, 137, 50);
+    padding: 14px 20px;
+  }
+
+  /* マウスホバー後*/
+  #button1:hover{
+    background:  rgb(11, 138, 47);
+    color: rgb(255, 255, 255);
+   }
+
+/*--------------------------------------------------------------------------------------
+  catch-copy
+  --------------------------------------------------------------------------------------*/
+
+ #catch-copy h2{
+  font-family: 'Kosugi Maru', sans-serif;
+  font-size: 37px;
+  font-weight: bold;
+  letter-spacing: 7px;/* 文字の間隔*/
+  margin: 0 0 50px;
+ }
+
+ #catch-copy p{
+  font-family: 游ゴシック;
+  font-weight: bold;
+  letter-spacing: 1px;
+  line-height: 30px;/* 行の間隔*/
+ }
+
+ #catch-copy article{
+  margin:120px 0 90px;
+ }
+
+ #catch-copy li{
+  font-family: 游ゴシック;
+  font-size: 14px;
+  font-weight: bold;
+ }
+
+
+ #news-picup{
+  display: flex;
+  gap: 20px;/* 並べた要素同士の空白*/
+  padding: 10px 7px;
+ }
+
+ #font-green{
+  color: rgb(0, 149, 0);
+  text-decoration: underline;
+ }
+
+ #transform1{
+  color: rgb(166, 176, 163);
+  font-weight: bold;
+  transform: scale(1.1,0.9);/* 要素を拡大・縮小する*/
+  margin: 0 50px;
+ }
+
+ #transform2{
+  color: rgb(166, 176, 163);
+  font-weight: bold;
+  transform: scale(1.1,0.9);
+ }
+
+
+ /*--------------------------------------------------------------------------------------
+  service
+  --------------------------------------------------------------------------------------*/
+
+
+ #service h3{
+  font-family: 'Kosugi Maru', sans-serif;
+  font-size: 29px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  margin: 0 0 80px
+ }
+ 
+ .headline{
+  color: rgb(194, 209, 188);
+  font-family: 'Kosugi Maru', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 30px 40px 0;
+  position: relative;
+  transform: scale(1.1,0.9);
+ }
+
+ #service h4{
+  font-family: 游ゴシック;
+  font-size: 23px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin: 10px 26px 25px;
+ }
+
+
+ /*-------------------------------------------
+  line-up1.2
+  -------------------------------------------*/
+
+
+   /* マウスホバー前*//* 写真に枠を付けておく*/ 
+ .img-hover{
+  width: 340px;
+  height: 190px;
+  overflow: hidden;/* はみ出した部分を表示しない*/ 
+ }
+
+ .img-hover img{
+  transition: 0.5s;
+ }
+
+  /* マウスホバー後*/
+ .img-hover img:hover{
+  transform: scale(1.1);
+ }
+
+
+ /* マウスホバー前*/
+ #line-up1 li{
+  background-color: rgb(255, 255, 255);
+ }
+
+ /* マウスホバー後*/
+ #line-up1 li:hover{
+  box-shadow: 0 3px 10px 5px rgba(150, 150, 150, 0.65);/* 影を付ける・水平方向、垂直方向、距離、広がり*/
+  transition: 0.5s;/* ゆっくり変化させる */
+ }
+
+
+ /* マウスホバー前*/
+ #line-up2 li{
+  background-color: rgb(255, 255, 255);
+ }
+
+ /* マウスホバー後*/
+ #line-up2 li:hover{
+  box-shadow: 0 3px 10px 5px rgba(150, 150, 150, 0.65);/* 影を付ける・水平方向、垂直方向、距離、広がり*/
+  transition: 0.5s;/* ゆっくり変化させる */
+ }
+
+ 
+ #line-up1{
+  display: flex;
+  gap: 30px;/* 並べた要素同士の空白*/
+  margin: 0 0 40px;
+ }
+ 
+ #line-up2{
+  display: flex;
+  gap: 30px;/* 並べた要素同士の空白*/
+  margin: 0 0 40px;
+ }
+
+
+ .headline-button{
+  width: 308px;
+  display: flex;
+  justify-content: space-between;/* 並べた要素を左右の端に寄せる*/
+ }
+
+ /* マウスホバー前*/
+ .button2{
+  width: 40px;
+  height: 40px;
+  border: 2px solid;
+  border-radius: 100px;
+  color: rgb(15, 137, 50);
+  font-size: 20px;
+  padding: 7px 2px 0 10px;
+ }
+
+ /* マウスホバー後*/
+ .button2:hover{
+  background:  rgb(11, 138, 47);
+  border: 2px solid;
+  color: rgb(255, 255, 255);
+ }
+
+ 
+ .detail{
+  width: 277px;
+  font-family: 游ゴシック;
+  font-size: 14px;
+  line-height: 23px;
+  margin: 0 30px 35px ;
+ }
+ 
+ 
+ /*-------------------------------------------
+  line-up3
+  -------------------------------------------*/
+ 
+
+  /* マウスホバー前*//* 写真に枠を付けておく*/ 
+ .img-hover2{
+  width: 360px;
+  height: 200px;
+  border-radius: 40px;/* 写真の角を丸くする*/ 
+  overflow: hidden;/* はみ出した部分を表示しない*/ 
+ }
+
+ .img-hover2 img{
+  width: 360px;
+  transition: 0.5s;
+ }
+
+  /* マウスホバー後*/
+ .img-hover2 img:hover{
+  transform: scale(1.1);
+ }
+
+ #habi-detaile{
+  margin: 10px 0 0 0px;
+ }
+
+
+ #habi a{
+  width: 1080px;
+  background-color:  rgb(255, 255, 255);
+  display: flex;
+  padding: 40px;
+ }
+
+ #habi-kitchen{
+  width: 690px;
+  font-family: 'Kosugi Maru', sans-serif;
+  font-size: 29px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  margin: 10px 0 25px 40px;
+ }
+
+
+ #headline-black{
+  font-family: 'Kosugi Maru', sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin: 0 38px ;
+ }
+
+ #detail2{
+  width: 600px;
+  border-top: 2px dashed green;/* 文字の上に破線を引く・破線の間隔・色*/ 
+  font-family: 游ゴシック;
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 23px;
+  margin: 0 0 0 40px;
+  padding: 25px 0 25px 0px;/* borderの内側の余白を開ける*/;
+ }
+
+
+ #headline-button2{
+  width: 610px;
+  display: flex;
+ }
+
+ /* マウスホバー前*/
+ .button2-1{
+  display: block;
+  width: 45px;
+  height: 40px;
+  border: 2px solid;
+  border-radius: 100px;
+  color: rgb(15, 137, 50);
+  font-size: 20px;
+  padding: 7px 2px 0 10px;
+ }
+
+ /* マウスホバー後*/
+  .button2-1:hover{
+  background:  rgb(11, 138, 47);
+  border: 2px solid;
+  color: rgb(255, 255, 255);
+ }
+
+ 
+
+ /*--------------------------------------------------------------------------------------
+  achievement
+  --------------------------------------------------------------------------------------*/
+
+ #achievement h3{
+  font-family: 'Kosugi Maru', sans-serif;
+  font-size: 29px;
+  font-weight: bold;
+  letter-spacing: 4px;
+  margin: 235px 0 25px;
+ }
+
+ #line-up-achievement{
+  display: flex;
+  margin: 60px 0;
+  gap: 55px;
+ }
+
+
+
+ /* マウスホバー前*//* 写真に枠を付けておく*/ 
+ #img-hover3{
+  width: 430px;
+  border-radius: 80px;/* 写真の角を丸くする*/ 
+  overflow: hidden;/* はみ出した部分を表示しない*/ 
+ }
+
+ #img-hover3 img{
+  width: 430px;
+  transition: 0.5s;
+ }
+
+  /* マウスホバー後*/
+ #img-hover3 img:hover{
+  transform: scale(1.1);
+ }
+
+
+/* マウスホバー前*//* 写真に枠を付けておく*/ 
+ .img-hover4{
+  width: 280px;
+  border-radius: 50px;/* 写真の角を丸くする*/ 
+  overflow: hidden;/* はみ出した部分を表示しない*/ 
+ }
+
+ .img-hover4 img{
+  width: 280px;
+  transition: 0.5s;
+ }
+
+  /* マウスホバー後*/
+ .img-hover4 img:hover{
+  transform: scale(1.1);
+ }
+
+
+ .headline-black2{
+  font-family: 游ゴシック;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin: 25px 0;
+ }
+
+ #line-up-achievement span{
+  background-color: #f7f4ef;
+  color: rgb(98, 110, 104);
+  font-family: 游ゴシック;
+  font-size: 13px;
+  margin: 0 9px 0 0 ;
+  padding: 5px 12px;
+ }
+
+ .span{
+  line-height: 35px;/* 行の間隔*/
+ }
+
+
+  /*--------------------------------------------------------------------------------------
+  others
+  --------------------------------------------------------------------------------------*/
+
+  #others{
+    width: 1200px;
+    display: flex;
+    gap: 125px;
+    margin: 160px 0 0;
+  }
+
+  #others h3{
+    font-family: 'Kosugi Maru', sans-serif;
+    font-size: 29px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    margin: 0 0 60px 0;
+  }
+
+  #others img{
+    width: 120px;
+    height: 80px;
+    border-radius: 20px;
+    border: solid 1px rgb(218, 218, 218);
+    margin: 0 20px 0 0;
+    object-fit: cover;/* 画像の縦横比を保ってトリミング*/
+  }
+
+  #news ul{
+    width: 635px;
+    border-top: 1px solid;/* 文字の上にまっすぐの線を引く*/ 
+    border-color: rgb(164, 184, 178);
+  }
+
+
+  /* マウスホバー前*/
+  #news li{
+    width: 635px;
+    border-bottom: 1px solid;/* 文字の下にまっすぐの線を引く*/ 
+    border-color: rgb(164, 184, 178);
+    padding: 24px 0 ;/* borderの内側の余白を開ける*/
+  }
+
+  /* マウスホバー後*/
+  #news li:hover{
+    background-color: #f7f4ef;
+    transition: 0.5s;/* ゆっくり変化させる */
+  }
+
+  #news1{
+    display: flex;
+  }
+
+  #news2{
+    display: flex;
+  }
+
+  #news3{
+    display: flex;
+  }
+
+  .date{
+    display: flex;
+  }
+
+  .transform3{
+    color: rgb(180, 192, 188);
+    font-size: 11px;
+    font-weight: bold;
+    margin: 4px 13px 0 5px ;
+    transform: scale(1.1,1.1);/* 要素を拡大・縮小する*/
+  }
+
+  .headline-green{
+    font-family: 游ゴシック;
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(0, 149, 0);
+  }
+
+  .headline-black3{
+    font-family: 游ゴシック;
+    font-weight: bold;
+    margin: 20px 0 ;
+  }
+
+   /* マウスホバー前*/
+  #button3{
+    border: 2px solid;
+    border-radius: 35px;
+    color: rgb(15, 137, 50);
+    font-family: 游ゴシック;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 25px 0 0 400px;
+    padding: 18px 65px 18px 55px;
+  } 
+
+  /* マウスホバー後*/
+  #button3:hover{
+    background:  rgb(11, 138, 47);
+    color: rgb(255, 255, 255);
+   }
+
+  /* マウスホバー前*/
+  #button4{
+    border: 2px solid;
+    border-radius: 35px;
+    color: rgb(15, 137, 50);
+    font-family: 游ゴシック;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 35px 40px 120px 0px;
+    padding: 19px 65px 19px 55px;
+  } 
+
+  /* マウスホバー後*/
+  #button4:hover{
+    background:  rgb(11, 138, 47);
+    color: rgb(255, 255, 255);
+   }
+
+  /* マウスホバー前*/
+  #button5{
+    border: 2px solid;
+    border-radius: 35px;
+    color: rgb(15, 137, 50);
+    font-family: 游ゴシック;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 35px 70px 0px 15px;
+    padding: 19px 10px 19px 55px;
+  } 
+
+  /* マウスホバー後*/
+  #button5:hover{
+    background:  rgb(11, 138, 47);
+    color: rgb(255, 255, 255);
+   }
+
+
+   
+
+
+/*--------------------------------------------------------------------------------------
+  footer
+  --------------------------------------------------------------------------------------*/
+
+  footer{
+    max-width: 1200px;
+    border-top: 1px solid;/* 文字の下にまっすぐの線を引く*/ 
+    display: flex;
+    font-family: 游ゴシック;
+    font-weight: bold;
+    margin: 150px 0 0;
+    padding: 42px 0 0;
+  }
+
+  #name{
+    font-size: 18px;
+  }
+
+  #address{
+    font-size: 15px;
+    transform: scale(1,0.9);/* 要素を拡大・縮小する*/
+    margin: 5px 0 25px;
+  }
+
+  #tel span{
+    font-size: 22px;
+    letter-spacing: 3px;
+    margin: 0 15px;
+  }
+
+  #footer-right{
+    margin: 0 0 0 475px;
+  }
+
+  #footer-right ul{
+    color: rgb(0, 149, 0);
+    display: flex;
+    font-size: 14px;   
+  }
+
+  #footer-right li{
+    margin: 0 0 0 20px;
+  }
+
+  #footer-right p{
+    color: rgb(97, 97, 97);
+    font-size: 13px;
+    margin: 47px 0 0 157px;
+  }
+
+ 

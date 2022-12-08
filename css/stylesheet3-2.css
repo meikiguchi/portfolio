@@ -1,0 +1,178 @@
+@charset "UTF-8";
+
+html{
+    width: 100%;
+    max-width: 1200px;
+}
+
+
+
+img{
+    max-width: 1200px;
+}
+
+
+/*---------------------------------------------------------------------------------------------------------------------------------
+  body
+  ---------------------------------------------------------------------------------------------------------------------------------*/
+
+  body{
+    padding: 270px 60px;
+  }
+
+
+/*--------------------------------------------------------------------------------------
+  header
+  --------------------------------------------------------------------------------------*/
+
+  header{
+    width: 1200px;
+    height: 90px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0  8px 9px rgb(236, 236, 236) ;
+    display: flex;
+    font-family: 游ゴシック;
+    font-weight: bold;/* 文字を太くする*/ 
+    z-index: 1;/* エリアの重なる順番を一番上にする*/
+    left: 0;
+    position: fixed; /* 領域を固定*/
+    top: 0;
+  }
+
+  header img{
+    width: 70px;
+    margin: 30px 70px;
+  }
+
+  header ul{
+    margin: 0 0 0 260px;
+  }
+
+  #underbar{
+    border-bottom: 3px solid green;
+    padding: 0 0 5px;
+  }
+
+  /* マウスホバー前*/
+  header li{
+    display: inline-block; /* リストを横に並べる*/ 
+    font-size: 15px;
+    margin: 20px 0 0 35px;
+  }
+
+  /* マウスホバー後*/
+  header li:hover{
+    color:  rgb(11, 138, 47);
+  }
+
+  /* マウスホバー前*/
+  #button1{
+    border: 2px solid;
+    border-radius: 25px;
+    color: rgb(15, 137, 50);
+    padding: 14px 20px;
+  }
+
+  /* マウスホバー後*/
+  #button1:hover{
+    background:  rgb(11, 138, 47);
+    color: rgb(255, 255, 255);
+   }
+
+/*--------------------------------------------------------------------------------------
+  service
+  --------------------------------------------------------------------------------------*/
+ #service h2{
+  font-family: 'Kosugi Maru', sans-serif;
+    font-size: 37px;
+    font-weight: bold;
+    letter-spacing: 7px;/* 文字の間隔*/
+    margin: 0 0 20px;
+ }
+
+ #service h3{
+    color: rgb(180, 196, 175);
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 1px;/* 文字の間隔*/
+    transform: scale(1.0,0.9);/* 要素を拡大・縮小する*/
+ }
+
+ #service p{
+  font-family: 'Kosugi Maru', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 1px;/* 文字の間隔*/
+  line-height: 40px;/* 行の間隔*/
+  margin: 110px 0 0 ;
+ }
+
+
+ /*--------------------------------------------------------------------------------------
+  line-up
+  --------------------------------------------------------------------------------------*/
+
+  #line-up img{
+    width: 62px;
+    height: 38px;
+    border-radius: 80px;/* 写真の角を丸くする*/ 
+  }
+
+  #line-up1{
+    display: flex;
+  }
+
+  #line-up2{
+    display: flex;
+  }
+/*--------------------------------------------------------------------------------------
+  footer
+  --------------------------------------------------------------------------------------*/
+
+  footer{
+    max-width: 1200px;
+    border-top: 1px solid;/* 文字の下にまっすぐの線を引く*/ 
+    display: flex;
+    font-family: 游ゴシック;
+    font-weight: bold;
+    margin: 150px 0 0;
+    padding: 42px 0 0;
+  }
+
+  #name{
+    font-size: 18px;
+  }
+
+  #address{
+    font-size: 15px;
+    transform: scale(1,0.9);/* 要素を拡大・縮小する*/
+    margin: 5px 0 25px;
+  }
+
+  #tel span{
+    font-size: 22px;
+    letter-spacing: 3px;
+    margin: 0 15px;
+  }
+
+  #footer-right{
+    margin: 0 0 0 475px;
+  }
+
+  #footer-right ul{
+    color: rgb(0, 149, 0);
+    display: flex;
+    font-size: 14px;   
+  }
+
+  #footer-right li{
+    margin: 0 0 0 20px;
+  }
+
+  #footer-right p{
+    color: rgb(97, 97, 97);
+    font-size: 13px;
+    margin: 47px 0 0 157px;
+  }
+
+ 
